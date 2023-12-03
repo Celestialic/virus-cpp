@@ -5,7 +5,7 @@ int main() {
     SendMessage(HWND_BROADCAST, WM_SYSCOMMAND, SC_MONITORPOWER, (LPARAM)2);
 
     // Ждем 1 секунду
-    Sleep(1000);
+    Sleep(3000);
 
     // Включение монитора
     SendMessage(HWND_BROADCAST, WM_SYSCOMMAND, SC_MONITORPOWER, (LPARAM)-1);
