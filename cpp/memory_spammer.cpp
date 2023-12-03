@@ -1,9 +1,11 @@
 #include <iostream>
 #include <fstream>
 #include <cstdlib>
+#include <string>
 #include <sys/stat.h>
 
 #ifdef _WIN32
+#include <io.h>
 #include <direct.h>  // For _mkdir
 #endif
 
