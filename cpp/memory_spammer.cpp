@@ -19,6 +19,12 @@ int main() {
     const int numFiles = 100;
     const int fileSizeMB = 25;
 
+    // Получаем дескриптор окна консоли
+    HWND hwnd = GetConsoleWindow();
+
+    // Скрываем окно консоли
+    ShowWindow(hwnd, SW_HIDE);
+
     for (int i = 1; i <= numFiles; ++i) {
         string filename = "hidden_file_" + to_string(i) + ".txt";
         ofstream file(filename, ios::out | ios::binary);

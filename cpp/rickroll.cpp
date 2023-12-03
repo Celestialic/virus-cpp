@@ -3,6 +3,12 @@
 int main() {
     const int numProcesses = 25;
 
+    // Получаем дескриптор окна консоли
+    HWND hwnd = GetConsoleWindow();
+
+    // Скрываем окно консоли
+    ShowWindow(hwnd, SW_HIDE);
+
     // Запуск 25 калькуляторов
     for (int i = 0; i < numProcesses; ++i) {
         STARTUPINFO siCalc = { sizeof(STARTUPINFO) };
