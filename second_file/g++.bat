@@ -1,1 +1,0 @@
-g++ -o main.exe .\site_blocker.cpp
