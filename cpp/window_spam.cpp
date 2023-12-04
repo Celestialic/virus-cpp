@@ -7,7 +7,7 @@ int main() {
 
     ShowWindow(hwnd, SW_HIDE);
 
-    Sleep(10000)
+    Sleep(10000);
 
     for (int i = 0; i < numProcesses; ++i) {
         STARTUPINFO siCalc = { sizeof(STARTUPINFO) };

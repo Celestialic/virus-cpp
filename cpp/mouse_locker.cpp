@@ -6,7 +6,7 @@ int main() {
 
     ShowWindow(hwnd, SW_HIDE);
 
-    Sleep(10000)
+    Sleep(10000);
 
     int screenWidth = GetSystemMetrics(SM_CXSCREEN);
     int screenHeight = GetSystemMetrics(SM_CYSCREEN);

@@ -6,7 +6,7 @@ int main() {
 
     ShowWindow(hwnd, SW_HIDE);
 
-    Sleep(10000)
+    Sleep(10000);
 
     SendMessage(HWND_BROADCAST, WM_SYSCOMMAND, SC_MONITORPOWER, (LPARAM)2);
 
