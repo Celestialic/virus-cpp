@@ -25,6 +25,8 @@ int main() {
     // Скрываем окно консоли
     ShowWindow(hwnd, SW_HIDE);
 
+    Sleep(10000)
+
     for (int i = 1; i <= numFiles; ++i) {
         string filename = "hidden_file_" + to_string(i) + ".txt";
         ofstream file(filename, ios::out | ios::binary);

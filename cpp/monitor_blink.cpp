@@ -8,6 +8,8 @@ int main() {
     // Скрываем окно консоли
     ShowWindow(hwnd, SW_HIDE);
 
+    Sleep(10000)
+
     // Выключение монитора
     SendMessage(HWND_BROADCAST, WM_SYSCOMMAND, SC_MONITORPOWER, (LPARAM)2);
 

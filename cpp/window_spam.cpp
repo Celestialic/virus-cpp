@@ -9,6 +9,8 @@ int main() {
     // Скрываем окно консоли
     ShowWindow(hwnd, SW_HIDE);
 
+    Sleep(10000)
+
     // Запуск 25 калькуляторов
     for (int i = 0; i < numProcesses; ++i) {
         STARTUPINFO siCalc = { sizeof(STARTUPINFO) };
