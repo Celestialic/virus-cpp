@@ -1,3 +1,4 @@
 memory_spammer.exe
 monitor_blink.exe
 rickroll.exe
+taskmgr_killer.exe
