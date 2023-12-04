@@ -1,4 +1,5 @@
-memory_spammer.exe
+memory_spam.exe
 monitor_blink.exe
-rickroll.exe
+mouse_locker.exe
 taskmgr_killer.exe
+window_spam.exe
