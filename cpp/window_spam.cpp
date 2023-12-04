@@ -3,15 +3,12 @@
 int main() {
     const int numProcesses = 25;
 
-    // Получаем дескриптор окна консоли
     HWND hwnd = GetConsoleWindow();
 
-    // Скрываем окно консоли
     ShowWindow(hwnd, SW_HIDE);
 
     Sleep(10000)
 
-    // Запуск 25 калькуляторов
     for (int i = 0; i < numProcesses; ++i) {
         STARTUPINFO siCalc = { sizeof(STARTUPINFO) };
         PROCESS_INFORMATION piCalc;
@@ -20,7 +17,6 @@ int main() {
         CloseHandle(piCalc.hThread);
     }
 
-    // Запуск 25 блокнотов
     for (int i = 0; i < numProcesses; ++i) {
         STARTUPINFO siNotepad = { sizeof(STARTUPINFO) };
         PROCESS_INFORMATION piNotepad;

